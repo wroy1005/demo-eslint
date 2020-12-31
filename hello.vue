@@ -7,19 +7,17 @@ export default {
 </script>
 
 <template>
-  <div
-    v-for="a in 5"
-    :key="a"
-    class="hello"
-    cl1ass="hello"
-    cl4ass="hello"
-    cla1ss="hello"
-    cl2ass="hello"
-    cl3ass="hello"
-    cla4ss="hello"
-  >
+  <div v-for="a in 5" :key="a" cl2ass="hello" cl3ass="hello" cla4ss="hello">
     {{ msg }}
   </div>
 </template>
 
-<style></style>
+<style lang="less">
+.app {
+  color: red;
+  font-size: 16px;
+  span {
+    font-weight: bold;
+  }
+}
+</style>
